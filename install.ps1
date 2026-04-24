@@ -29,4 +29,4 @@ $utf8bom = New-Object System.Text.UTF8Encoding($true)
 
 Write-Host '[MixBox] Запуск проверки...' -ForegroundColor Magenta
 
-& $script.FullName -OpenReport
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File $script.FullName -OpenReport
